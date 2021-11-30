@@ -4,7 +4,7 @@ html {
 }
 
 .selectContainer {
-	display: flex;
+	display: none;
 	border: solid 1px black;
 	justify-content: center;
 	align-items: center;
@@ -35,17 +35,18 @@ h4 {
 	height: auto;
 	width: 75vw;
 	margin: 2rem auto;
-	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
 
 .uba {
 	border: solid 1px red;
+	display: none;
 }
 
 .federation {
 	border: solid 1px blue;
+	display: flex;
 }
 
 .ubaHeading,
@@ -77,5 +78,41 @@ h3,
 .fedHandi {
 	border: inherit;
 	width: 100%;
-	height: 25px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 1rem 0;
+}
+
+input {
+	width: 4rem;
+}
+
+.pairInputsScratch,
+.pairInputsHandicap {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	/* border: solid 1px black; */
+}
+
+.pairScore > *,
+.matchScore > * {
+	width: 100%;
+	text-align: center;
+}
+
+.matchTotals {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.matchTotals h3 {
+	width: 100%;
 }
