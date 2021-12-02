@@ -99,10 +99,17 @@ input {
 	/* border: solid 1px black; */
 }
 
-.pairScore > *,
+/* .pairScore > *,
 .matchScore > * {
 	width: 100%;
 	text-align: center;
+} */
+
+.pairScore {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .matchTotals {
