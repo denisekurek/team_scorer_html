@@ -9,15 +9,16 @@ html {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 75vw;
-	height: 50vh;
+	max-width: 50vw;
+	min-width: 25vw;
+	height: 25vh;
 	margin: 2rem auto;
 }
 
 .teamName {
 	border: inherit;
 	width: 75%;
-	height: 30%;
+	height: 25%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -33,7 +34,8 @@ h4 {
 .uba,
 .federation {
 	height: auto;
-	width: 75vw;
+	max-width: 50vw;
+	min-width: 25vw;
 	margin: 2rem auto;
 	flex-wrap: wrap;
 	align-items: flex-start;
@@ -41,7 +43,7 @@ h4 {
 
 .uba {
 	border: solid 1px red;
-	display: none;
+	display: flex;
 }
 
 .federation {
@@ -90,9 +92,8 @@ input {
 	width: 4rem;
 }
 
-.pairInputsScratch,
-.pairInputsHandicap {
-	width: 100%;
+.pairInputs {
+	width: 75%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;

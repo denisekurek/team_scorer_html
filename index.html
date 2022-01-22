@@ -3,18 +3,16 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Team Scorer</title>
 		<link rel="stylesheet" href="./index.css" />
 	</head>
 	<body>
 		<div class="selectContainer">
 			<section class="teamName" id="M2X">
 				<h1>Motion to Strike</h1>
-				<h4>UBA</h4>
 			</section>
 			<section class="teamName" id="CF">
 				<h1>Coastal Fusion</h1>
-				<h4>Federation</h4>
 			</section>
 		</div>
 		<div class="uba">
@@ -22,14 +20,28 @@
 				<h1>Motion to Strike</h1>
 			</section>
 			<section class="ubaScratch">
-				<h3>Scratch</h3>
+				<h3>Scratch Game <span class="game" id="us">1</span></h3>
 				<div class="pairInputs">
-					<label>M2X:</label>
+					<table>
+						<tr>
+							<td>M2X Scratch Score:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Points Won: <span class="points" id="us">0</span></td>
+							<td>Total: <span class="total" id="us">0</span></td>
+						</tr>
+						<tr>
+							<td>Opp Scratch Score:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Points Won: <span class="points" id="uso">0</span></td>
+							<td>Total: <span class="total" id="uso">0</span></td>
+						</tr>
+					</table>
+					<!-- <label>M2X:</label>
 					<input type="number" size="5" maxlength="3" />
 					<label>Opponent:</label>
-					<input type="number" size="5" maxlength="3" />
+					<input type="number" size="5" maxlength="3" /> -->
 				</div>
-				<table class="pairScore">
+				<!-- <table class="pairScore">
 					<tr>
 						<th>Teams</th>
 						<th>G1</th>
@@ -54,25 +66,43 @@
 						<td>0</td>
 						<td>0</td>
 					</tr>
-				</table>
+				</table> -->
 				<button type="button">Score Game</button>
 			</section>
 			<section class="ubaHandi1">
-				<h3>Handicap 1</h3>
-				<div class="pairInputsScratch">
-					<label>M2X Score:</label>
+				<h3>Handicap 1 Game <span class="game" id="uh1">1</span></h3>
+				<div class="pairInputs">
+					<table>
+						<tr>
+							<td>M2X Scratch Score:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Handicap:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Points Won: <span class="points" id="uh1">0</span></td>
+							<td>Total: <span class="total" id="uh1">0</span></td>
+						</tr>
+						<tr>
+							<td>Opp Scratch Score:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Handicap:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Points Won: <span class="points" id="uh1o">0</span></td>
+							<td>Total: <span class="total" id="uh1o">0</span></td>
+						</tr>
+					</table>
+					<!-- <label>M2X Score:</label>
 					<input type="number" size="5" maxlength="3" />
 
 					<label>Opp Score:</label>
-					<input type="number" size="5" maxlength="3" />
+					<input type="number" size="5" maxlength="3" /> -->
 				</div>
-				<div class="pairInputsHandicap">
+				<!-- <div class="pairInputsHandicap">
 					<label>M2X Handicap:</label>
 					<input type="number" size="5" maxlength="3" />
 					<label>Opp Handicap:</label>
 					<input type="number" size="5" maxlength="3" />
-				</div>
-				<table class="pairScore">
+				</div> -->
+				<!-- <table class="pairScore">
 					<tr>
 						<th>Teams</th>
 						<th>G1</th>
@@ -97,25 +127,43 @@
 						<td>0</td>
 						<td>0</td>
 					</tr>
-				</table>
+				</table> -->
 				<button type="button">Score Game</button>
 			</section>
 			<section class="ubaHandi2">
-				<h3>Handicap 2</h3>
-				<div class="pairInputsScratch">
-					<label>M2X Score:</label>
+				<h3>Handicap 2 Game <span class="game" id="uh2">1</span></h3>
+				<div class="pairInputs">
+					<table>
+						<tr>
+							<td>M2X Scratch Score:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Handicap:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Points Won: <span class="points" id="uh2">0</span></td>
+							<td>Total: <span class="total" id="uh2">0</span></td>
+						</tr>
+						<tr>
+							<td>Opp Scratch Score:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Handicap:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Points Won: <span class="points" id="uh2o">0</span></td>
+							<td>Total: <span class="total" id="uh2o">0</span></td>
+						</tr>
+					</table>
+					<!-- <label>M2X Score:</label>
 					<input type="number" size="5" maxlength="3" />
 
 					<label>Opp Score:</label>
-					<input type="number" size="5" maxlength="3" />
+					<input type="number" size="5" maxlength="3" /> -->
 				</div>
-				<div class="pairInputsHandicap">
+				<!-- <div class="pairInputsHandicap">
 					<label>M2X Handicap:</label>
 					<input type="number" size="5" maxlength="3" />
 					<label>Opp Handicap:</label>
 					<input type="number" size="5" maxlength="3" />
-				</div>
-				<table class="pairScore">
+				</div> -->
+				<!-- <table class="pairScore">
 					<tr>
 						<th>Teams</th>
 						<th>G1</th>
@@ -139,11 +187,11 @@
 						<td></td>
 						<td></td>
 						<td></td>
-					</tr>
+					</tr> -->
 				</table>
 				<button type="button">Score Game</button>
 			</section>
-			<section class="matchTotals">
+			<!-- <section class="matchTotals">
 				<h3>Match Totals</h3>
 				<table class="matchScore">
 					<tr>
@@ -171,26 +219,40 @@
 						<td>0</td>
 					</tr>
 				</table>
-			</section>
+			</section> -->
 		</div>
 		<div class="federation">
 			<section class="fedHeading">
 				<h1>Coastal Fusion</h1>
 			</section>
 			<section class="fedScratch">
-				<h3>Scratch</h3>
+				<h3>Scratch Game <span class="game" id="fs">1</span></h3>
 				<div class="pairInputs">
-					<label>CF:</label>
+					<table>
+						<tr>
+							<td>CF Scratch Score:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Points Won: <span class="points" id="fs">0</span></td>
+							<td>Total: <span class="total" id="fs">0</span></td>
+						</tr>
+						<tr>
+							<td>Opp Scratch Score:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Points Won: <span class="points" id="fso">0</span></td>
+							<td>Total: <span class="total" id="fso">0</span></td>
+						</tr>
+					</table>
+					<!-- <label>CF:</label>
 					<input type="number" size="5" maxlength="3" />
 					<label>Opponent:</label>
-					<input type="number" size="5" maxlength="3" />
+					<input type="number" size="5" maxlength="3" /> -->
 				</div>
-				<div class='pairScore'>
+				<!-- <div class='pairScore'>
 					<h5>CF:</h5>
 					<p>0</p>
 					<h5>Opp:</h5>
 					<p>0</p>
-				</div>
+				</div> -->
 				<!-- <table class="pairScore">
 				<tr>
 						<th>Teams</th>
@@ -232,21 +294,39 @@
 				<button type="button">Score Game</button>
 			</section>
 			<section class="fedHybrid">
-				<h3>Hybrid</h3>
-				<div class="pairInputsScratch">
-					<label>CF Score:</label>
+				<h3>Hybrid Game <span class="game" id="fhy">1</span></h3>
+				<div class="pairInputs">
+					<table>
+						<tr>
+							<td>CF Scratch Score:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Handicap:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Points Won: <span class="points" id="fhy">0</span></td>
+							<td>Total: <span class="total" id="fhy">0</span></td>
+						</tr>
+						<tr>
+							<td>Opp Scratch Score:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Handicap:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Points Won: <span class="points" id="fhyo">0</span></td>
+							<td>Total: <span class="total" id="fhyo">0</span></td>
+						</tr>
+					</table>
+					<!-- <label>CF Score:</label>
 					<input type="number" size="5" maxlength="3" />
 
 					<label>Opp Score:</label>
-					<input type="number" size="5" maxlength="3" />
+					<input type="number" size="5" maxlength="3" /> -->
 				</div>
-				<div class="pairInputsHandicap">
+				<!-- <div class="pairInputsHandicap">
 					<label>CF Handicap:</label>
 					<input type="number" size="5" maxlength="3" />
 					<label>Opp Handicap:</label>
 					<input type="number" size="5" maxlength="3" />
-				</div>
-				<table class="pairScore">
+				</div> -->
+				<!-- <table class="pairScore">
 					<tr>
 						<th>Teams</th>
 						<th>G1</th>
@@ -283,25 +363,43 @@
 						<td>0</td>
 						<td>0</td>
 					</tr>
-				</table>
+				</table> -->
 				<button type="button">Score Game</button>
 			</section>
 			<section class="fedHandi">
-				<h3>Handicap</h3>
-				<div class="pairInputsScratch">
-					<label>CF Score:</label>
+				<h3>Handicap Game <span class="game" id="fhd">1</span></h3>
+				<div class="pairInputs">
+					<table>
+						<tr>
+							<td>CF Scratch Score:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Handicap:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Points Won: <span class="points" id="fhd">0</span></td>
+							<td>Total: <span class="total" id="fhd">0</span></td>
+						</tr>
+						<tr>
+							<td>Opp Scratch Score:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Handicap:</td>
+							<td><input type="number" size="5" maxlength="3" /></td>
+							<td>Points Won: <span class="points" id="fhd">0</span></td>
+							<td>Total: <span class="total" id="fhd">0</span></td>
+						</tr>
+					</table>
+					<!-- <label>CF Score:</label>
 					<input type="number" size="5" maxlength="3" />
 
 					<label>Opp Score:</label>
-					<input type="number" size="5" maxlength="3" />
+					<input type="number" size="5" maxlength="3" /> -->
 				</div>
-				<div class="pairInputsHandicap">
+				<!-- <div class="pairInputsHandicap">
 					<label>CF Handicap:</label>
 					<input type="number" size="5" maxlength="3" />
 					<label>Opp Handicap:</label>
 					<input type="number" size="5" maxlength="3" />
-				</div>
-				<table class="pairScore">
+				</div> -->
+				<!-- <table class="pairScore">
 					<tr>
 						<th>Teams</th>
 						<th>G1</th>
@@ -338,11 +436,10 @@
 						<td>0</td>
 						<td>0</td>
 					</tr>
-				</table>
-				</table>
+				</table> -->
 				<button type="button">Score Game</button>
 			</section>
-			<section class="matchTotals">
+			<!-- <section class="matchTotals">
 				<h3>Match Totals</h3>
 				<table class="pairScore">
 					<tr>
@@ -382,7 +479,7 @@
 						<td>0</td>
 					</tr>
 				</table>
-			</section>
+			</section> -->
 		</div>
 	</body>
 </html>
