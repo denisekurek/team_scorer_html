@@ -19,9 +19,9 @@ let cfHandicap = 0;
 let oppHandicap = 0;
 let ubaScoreCount = 2;
 let fedScoreCount = 1;
-let pair1Game = 0;
-let pair2Game = 0;
-let pair3Game = 0;
+let pair1Game = 1;
+let pair2Game = 1;
+let pair3Game = 1;
 let pair1Total = 0;
 let pair2Total = 0;
 let pair3Total = 0;
@@ -90,21 +90,31 @@ function backFunctionFed() {
 
 function ubaCalcScr() {
 	// console.log('Uba Scratch');
-	m2xScore = document.getElementById('m2xScratchScore').value;
+	m2xScore = parseInt(document.getElementById('m2xScratchScore').value);
 	// console.log(m2xScore);
-	oppScore = document.getElementById('oppScratchScoreUBA').value;
+	oppScore = parseInt(document.getElementById('oppScratchScoreUBA').value);
 	// console.log(oppScore);
-	pair1Game++;
-	pair1Total += m2xScore;
-	pair1TotalOpp += oppScore;
+
+	//Determine the winner of the game
 	if (m2xScore > oppScore) {
 		console.log('M2X Wins Game');
-	} else {
+	} else if (oppScore > m2xScore) {
 		console.log('Opp Wins Game');
+	} else {
+		console.log('Draw');
 	}
-	console.log('Game:' + pair1Game);
+	//Remove scores from previous game
+	pair1Total += m2xScore;
+
+	pair1TotalOpp += oppScore;
+	//Add Totals to page
 	console.log('M2X total: ' + pair1Total);
 	console.log('Opp Total: ' + pair1TotalOpp);
+	//Update Game being displayed
+	let game = document.getElementById('ubaScratchGame');
+	pair1Game++;
+	console.log('Game:' + pair1Game);
+	game.innerHTML = pair1Game.toString();
 }
 
 function ubaCalcHandi1() {
