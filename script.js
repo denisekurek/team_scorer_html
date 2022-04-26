@@ -14,7 +14,7 @@ const fedHandicap = document.getElementById('fedHandicap');
 let m2xScore = 0;
 let cfScore = 0;
 let oppScore = 0;
-let winner;
+let winner = 0;
 let m2xHandicap = 0;
 // let cfHandicap = 0;
 let oppHandicap = 0;
@@ -89,16 +89,22 @@ function backFunctionFed() {
 	oppHandicap = 0;
 }
 
-function CalculateUBAScores(motionScore, motionHandicap, oppScore, oppHandicap) {  //Return winner and total scores
-	if (motionScore > oppScore) {
+function CalculateUBAScores(
+	motionScore,
+	motionHandicap,
+	oppScore,
+	oppHandicap
+) {
+	//Return winner and total scores
+	if (motionScore + motionHandicap > oppScore + oppHandicap) {
 		console.log('M2X Wins Game');
-		return '1'
-	} else if (oppScore > motionScore) {
+		return '1';
+	} else if (oppScore + oppHandicap > motionScore + motionHandicap) {
 		console.log('Opp Wins Game');
-		return '-1`'
+		return '-1';
 	} else {
 		console.log('Draw');
-		return '0'
+		return '0';
 	}
 }
 
@@ -108,7 +114,8 @@ function ubaCalcScr() {
 	oppScore = parseInt(document.getElementById('oppScratchScoreUBA').value);
 
 	//Calculating who won the game with scores
-	CalculateUBAScores(m2xScore, m2xHandicap, oppScore, oppHandicap)
+	//mx2 = 1, opp = -1, draw = 0
+	winner = CalculateUBAScores(m2xScore, m2xHandicap, oppScore, oppHandicap);
 
 	//Update Points won and Team Totals and change page elements to reflect new totals
 	pair1Total += m2xScore;
@@ -118,10 +125,10 @@ function ubaCalcScr() {
 
 	//Update Game being displayed - complete
 	let game = document.getElementById('ubaScratchGame');
-	pair1Game++;
 	console.log('Game:' + pair1Game);
+	pair1Game++;
 	game.innerHTML = pair1Game.toString();
-	
+
 	//Remove scores from previous game
 }
 
